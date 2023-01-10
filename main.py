@@ -2,9 +2,7 @@ def palindrom(word):
     slowo = word
     slowo = slowo.replace(' ', '')
     back = slowo[::-1]
-    if back == slowo:
-        return True
-    return False
+    return bool(slowo == back)
 
 # funkcja zwraca True/False w zależności od tego czy argument jest swoim palindromem, pomija spacje
-print(palindrom("kajak"))
+print(palindrom("aaaba"))
